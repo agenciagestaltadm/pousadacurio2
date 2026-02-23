@@ -435,3 +435,6 @@ It can also happen if the client has a browser extension installed which messes 
 [00:36:56.188] Browser WARN    Image with src "http://localhost:3001/images/al-invest.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [00:36:56.188] Browser WARN    Image with src "http://localhost:3001/images/ue-portuvertical.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [00:36:56.188] Browser WARN    Image with src "http://localhost:3001/images/sebrae.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:55.046] Server  LOG     ✓ Compiled in 1764ms
+[00:59:48.464] Server  LOG     ✓ Compiled in 832ms
+[01:01:42.192] Server  LOG     ✓ Compiled in 588ms

@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { MapPin, Star } from "lucide-react";
+import { AvailabilityModal } from "@/components/AvailabilityModal";
 
 const prices = [
   { type: "Solteiro", price: "R$ 130,00", icon: "👤" },
@@ -11,6 +13,7 @@ const prices = [
 ];
 
 export function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { scrollY } = useScroll();
   const backgroundY = useTransform(scrollY, [0, 500], [0, 150]);
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
@@ -173,6 +176,22 @@ export function Hero() {
             >
               💡 Reservas com mais de 3 diárias têm descontos especiais!
             </motion.p>
+
+            {/* CTA Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.1 }}
+            >
+              <motion.button
+                onClick={() => setIsModalOpen(true)}
+                className="mt-6 bg-[#D4AF37] hover:bg-[#B88A1E] text-[#0B1F3B] font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg text-lg"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Ver Disponibilidade
+              </motion.button>
+            </motion.div>
           </div>
 
           {/* Right Column - Logo/Image */}
@@ -233,6 +252,12 @@ export function Hero() {
           />
         </motion.div>
       </motion.div>
+
+      {/* Availability Modal */}
+      <AvailabilityModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </section>
   );
 }
