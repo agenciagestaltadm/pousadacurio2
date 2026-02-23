@@ -1,8 +1,437 @@
-[00:41:28.157] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:41:36.619] Browser WARN    You are trying to animate color from "rgba(NaN, NaN, NaN, NaN)" to "rgb(11, 31, 59)". "rgba(NaN, NaN, NaN, NaN)" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable
-[00:45:38.038] Browser WARN    You are trying to animate color from "rgba(NaN, NaN, NaN, NaN)" to "rgb(11, 31, 59)". "rgba(NaN, NaN, NaN, NaN)" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable
-[01:25:56.087] Server  LOG     ✓ Compiled in 342ms
-[01:40:03.701] Server  LOG     ✓ Compiled in 302ms
-[01:41:28.823] Server  LOG     ✓ Compiled in 312ms
-[01:44:40.486] Server  LOG     ✓ Compiled in 206ms
-[01:44:50.384] Server  LOG     ✓ Compiled in 229ms
+[00:00:03.025] Server  LOG     ✓ Ready in 2.3s
+[00:00:18.802] Server  LOG     ○ Compiling / ...
+[00:00:22.698] Server  WARN    Image with src "/images/WhatsApp Image 2026-02-02 at 16.31.11 (1).jpeg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:23.874] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:24.000] Browser WARN    Image with src "/images/WhatsApp Image 2026-02-02 at 16.31.11 (1).jpeg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:25.712] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <LoadingBoundary name="/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+                <SegmentViewNode type="page" pagePath="page.tsx">
+                  <SegmentTrieNode>
+                  <Home>
+                    <main className="min-h-screen">
+                      <Header>
+                      <Hero>
+                        <section id="hero" className="relative m...">
+                          <motion.div>
+                          <div className="absolute i...">
+                            <motion.div className="absolute w..." initial={{x:"2.28025...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(2.2802534054053414%) translateY(100%)"
+-                                 transform: "translateX(62.9573%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"26.5151...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(26.515133805569345%) translateY(100%)"
+-                                 transform: "translateX(1.43706%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"45.0175...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(45.01750532652279%) translateY(100%)"
+-                                 transform: "translateX(16.5751%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"71.6245...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(71.6245463833933%) translateY(100%)"
+-                                 transform: "translateX(84.7368%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"59.7924...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(59.792405375598335%) translateY(100%)"
+-                                 transform: "translateX(97.3359%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"48.4701...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(48.4701483777922%) translateY(100%)"
+-                                 transform: "translateX(95.8062%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          ...
+                      ...
+                ...
+              ...
+
+[00:00:25.712] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:25.712] Browser WARN    Image with src "http://localhost:3001/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:25.712] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:01:01.971] Browser WARN    Image with src "http://localhost:3001/images/al-invest.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:01.971] Browser WARN    Image with src "http://localhost:3001/images/sebrae.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:57.986] Server  LOG     ✓ Compiled in 4.6s
+[00:14:49.240] Server  WARN    Image with src "/images/WhatsApp Image 2026-02-02 at 16.31.11 (1).jpeg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:50.115] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:50.546] Browser WARN    Image with src "/images/WhatsApp Image 2026-02-02 at 16.31.11 (1).jpeg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:51.682] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <LoadingBoundary name="/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+                <SegmentViewNode type="page" pagePath="page.tsx">
+                  <SegmentTrieNode>
+                  <Home>
+                    <main className="min-h-screen">
+                      <Header>
+                      <Hero>
+                        <section id="hero" className="relative m...">
+                          <motion.div>
+                          <div className="absolute i...">
+                            <motion.div className="absolute w..." initial={{x:"77.6687...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(77.66876601750009%) translateY(100%)"
+-                                 transform: "translateX(14.7368%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"33.7451...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(33.745109315911336%) translateY(100%)"
+-                                 transform: "translateX(14.1812%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"71.5697...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(71.56971088234441%) translateY(100%)"
+-                                 transform: "translateX(75.6065%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"35.1815...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(35.18157472294175%) translateY(100%)"
+-                                 transform: "translateX(96.5911%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"10.1193...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(10.119379908269565%) translateY(100%)"
+-                                 transform: "translateX(0.641641%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"26.2813...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(26.2813561464055%) translateY(100%)"
+-                                 transform: "translateX(53.5232%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          ...
+                      ...
+                ...
+              ...
+
+[00:14:51.682] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:18:06.940] Server  LOG     ✓ Compiled in 485ms
+[00:22:18.480] Server  LOG     ✓ Compiled in 572ms
+[00:22:59.657] Server  LOG     ✓ Compiled in 3.2s
+[00:26:49.324] Server  WARN    Image with src "/images/WhatsApp Image 2026-02-02 at 16.31.11 (1).jpeg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:50.684] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:51.162] Browser WARN    Image with src "/images/WhatsApp Image 2026-02-02 at 16.31.11 (1).jpeg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:51.903] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <LoadingBoundary name="/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+                <SegmentViewNode type="page" pagePath="page.tsx">
+                  <SegmentTrieNode>
+                  <Home>
+                    <main className="min-h-screen">
+                      <Header>
+                      <Hero>
+                        <section id="hero" className="relative m...">
+                          <motion.div>
+                          <div className="absolute i...">
+                            <motion.div className="absolute w..." initial={{x:"30.1791...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(30.179106642487096%) translateY(100%)"
+-                                 transform: "translateX(60.6005%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"43.9740...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(43.974019937995514%) translateY(100%)"
+-                                 transform: "translateX(39.3984%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"42.4657...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(42.46578614820217%) translateY(100%)"
+-                                 transform: "translateX(31.5387%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"27.0325...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(27.03254552670924%) translateY(100%)"
+-                                 transform: "translateX(46.3565%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"53.3974...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(53.39745050999729%) translateY(100%)"
+-                                 transform: "translateX(0.557518%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"56.5769...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(56.576982784626736%) translateY(100%)"
+-                                 transform: "translateX(66.8199%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          ...
+                      ...
+                ...
+              ...
+
+[00:26:51.903] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:30:02.206] Server  LOG     ✓ Compiled in 3.5s
+[00:35:42.994] Server  LOG     ✓ Compiled in 439ms
+[00:36:53.856] Server  WARN    Image with src "/images/WhatsApp Image 2026-02-02 at 16.31.11 (1).jpeg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:36:54.891] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:55.275] Browser WARN    Image with src "/images/WhatsApp Image 2026-02-02 at 16.31.11 (1).jpeg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:36:56.188] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <LoadingBoundary name="/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+                <SegmentViewNode type="page" pagePath="page.tsx">
+                  <SegmentTrieNode>
+                  <Home>
+                    <main className="min-h-screen">
+                      <Header>
+                      <Hero>
+                        <section id="hero" className="relative m...">
+                          <motion.div>
+                          <div className="absolute i...">
+                            <motion.div className="absolute w..." initial={{x:"75.7581...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(75.75813001184231%) translateY(100%)"
+-                                 transform: "translateX(52.7753%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"78.9356...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(78.93568170891953%) translateY(100%)"
+-                                 transform: "translateX(2.21601%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"77.5279...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(77.52796608252467%) translateY(100%)"
+-                                 transform: "translateX(35.3441%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"35.1953...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(35.19534282059487%) translateY(100%)"
+-                                 transform: "translateX(93.7962%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"91.0179...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(91.01791087840994%) translateY(100%)"
+-                                 transform: "translateX(59.5603%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                            <motion.div className="absolute w..." initial={{x:"52.3167...", ...}} ...>
+                              <div
+                                className="absolute w-2 h-2 bg-[#D4AF37]/30 rounded-full"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateX(52.31679344138903%) translateY(100%)"
+-                                 transform: "translateX(60.6427%) translateY(100%)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          ...
+                      ...
+                ...
+              ...
+
+[00:36:56.188] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:36:56.188] Browser WARN    Image with src "http://localhost:3001/images/gg-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:36:56.188] Browser WARN    Image with src "http://localhost:3001/images/al-invest.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:36:56.188] Browser WARN    Image with src "http://localhost:3001/images/ue-portuvertical.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:36:56.188] Browser WARN    Image with src "http://localhost:3001/images/sebrae.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

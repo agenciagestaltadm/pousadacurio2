@@ -11,33 +11,60 @@ const apoiadores = [
   { nome: "SEBRAE", logo: "/images/sebrae.png" },
 ];
 
+// Duplicamos os apoiadores para criar o efeito de loop infinito no mobile
+const apoiadoresDuplicados = [...apoiadores, ...apoiadores];
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[#0B1F3B] text-white">
-      {/* Sponsors Section */}
-      <div className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <p className="text-center text-white/50 text-sm uppercase tracking-wide mb-8">
-            Apoiadores
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      {/* Sponsors Section - Carrossel no Mobile, Fixo no Desktop */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="py-6">
+          {/* Mobile: Carrossel infinito */}
+          <div className="md:hidden overflow-hidden">
+            <div className="flex animate-scroll">
+              {apoiadoresDuplicados.map((apoiador, index) => (
+                <div
+                  key={`mobile-${apoiador.nome}-${index}`}
+                  className="bg-white rounded-lg p-3 mx-2 flex items-center justify-center hover:bg-gray-50 transition-colors flex-shrink-0"
+                >
+                  {apoiador.logo ? (
+                    <Image
+                      src={apoiador.logo}
+                      alt={apoiador.nome}
+                      width={80}
+                      height={40}
+                      className="max-h-10 w-auto object-contain"
+                    />
+                  ) : (
+                    <span className="text-gray-600 text-sm font-medium text-center">
+                      {apoiador.nome}
+                    </span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Desktop: Fixo em fila horizontal */}
+          <div className="hidden md:flex justify-center items-center gap-8 max-w-7xl mx-auto px-4">
             {apoiadores.map((apoiador) => (
               <div
                 key={apoiador.nome}
-                className="bg-white rounded-xl p-6 flex items-center justify-center hover:bg-gray-100 transition-colors"
+                className="bg-white rounded-lg p-4 flex items-center justify-center hover:bg-gray-50 transition-colors"
               >
                 {apoiador.logo ? (
                   <Image
                     src={apoiador.logo}
                     alt={apoiador.nome}
-                    width={120}
-                    height={60}
-                    className="max-h-16 w-auto object-contain"
+                    width={100}
+                    height={50}
+                    className="max-h-12 w-auto object-contain"
                   />
                 ) : (
-                  <span className="text-white/60 text-sm font-medium text-center">
+                  <span className="text-gray-600 text-sm font-medium text-center">
                     {apoiador.nome}
                   </span>
                 )}

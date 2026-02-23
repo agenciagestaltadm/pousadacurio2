@@ -165,31 +165,31 @@ export function Header() {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              className="lg:hidden mt-4 pb-4 border-t border-white/10 pt-4"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
+              className="lg:hidden absolute top-full left-0 right-0 bg-[#0B1F3B]/98 backdrop-blur-lg shadow-xl mt-2 mx-4 rounded-lg overflow-hidden"
+              initial={{ opacity: 0, height: 0, y: -10 }}
+              animate={{ opacity: 1, height: "auto", y: 0 }}
+              exit={{ opacity: 0, height: 0, y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <nav className="flex flex-col gap-3">
+              <nav className="flex flex-col gap-1 p-4">
                 {navItems.map((item, index) => (
                   <motion.button
                     key={item.href}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-white/90 hover:text-[#D4AF37] transition-colors text-left py-2 font-medium"
+                    className="text-white/90 hover:text-[#D4AF37] hover:bg-white/5 transition-colors text-left py-3 px-4 font-medium rounded-lg"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
+                    transition={{ delay: index * 0.05 }}
                   >
                     {item.label}
                   </motion.button>
                 ))}
                 <motion.button
                   onClick={handleWhatsAppClick}
-                  className="bg-[#D4AF37] hover:bg-[#B88A1E] text-[#0B1F3B] font-semibold px-6 py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 mt-2"
+                  className="bg-[#D4AF37] hover:bg-[#B88A1E] text-[#0B1F3B] font-semibold px-6 py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 mt-3"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
+                  transition={{ delay: 0.4 }}
                 >
                   <Phone className="w-4 h-4" />
                   Reservar Agora
