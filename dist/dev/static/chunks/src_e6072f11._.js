@@ -5883,19 +5883,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 const apoiadores = [
     {
         nome: "Global Gateway",
-        logo: "/images/gg-logo.png"
+        logo: "/images/gg-logo.png",
+        width: 100,
+        height: 50
     },
     {
         nome: "AL-INVEST Verde",
-        logo: "/images/al-invest.png"
+        logo: "/images/al-invest.png",
+        width: 140,
+        height: 70
     },
     {
         nome: "União Europeia",
-        logo: "/images/ue-portuvertical.jpg"
+        logo: "/images/ue-portuvertical.jpg",
+        width: 100,
+        height: 50
     },
     {
         nome: "SEBRAE",
-        logo: "/images/sebrae.png"
+        logo: "/images/sebrae.png",
+        width: 100,
+        height: 50
     }
 ];
 // Duplicamos os apoiadores para criar o efeito de loop infinito no mobile
@@ -5922,9 +5930,9 @@ function Footer() {
                                         children: apoiador.logo ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             src: apoiador.logo,
                                             alt: apoiador.nome,
-                                            width: 80,
-                                            height: 40,
-                                            className: "max-h-10 w-auto object-contain"
+                                            width: apoiador.width || 80,
+                                            height: apoiador.height || 40,
+                                            className: "max-h-12 w-auto object-contain"
                                         }, void 0, false, {
                                             fileName: "[project]/src/sections/Footer.tsx",
                                             lineNumber: 34,
@@ -5959,9 +5967,9 @@ function Footer() {
                                     children: apoiador.logo ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: apoiador.logo,
                                         alt: apoiador.nome,
-                                        width: 100,
-                                        height: 50,
-                                        className: "max-h-12 w-auto object-contain"
+                                        width: apoiador.width || 100,
+                                        height: apoiador.height || 50,
+                                        className: "max-h-16 w-auto object-contain"
                                     }, void 0, false, {
                                         fileName: "[project]/src/sections/Footer.tsx",
                                         lineNumber: 59,

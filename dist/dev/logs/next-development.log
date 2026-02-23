@@ -438,3 +438,5 @@ It can also happen if the client has a browser extension installed which messes 
 [00:57:55.046] Server  LOG     ✓ Compiled in 1764ms
 [00:59:48.464] Server  LOG     ✓ Compiled in 832ms
 [01:01:42.192] Server  LOG     ✓ Compiled in 588ms
+[01:49:36.980] Server  LOG     ✓ Compiled in 3.1s
+[01:50:52.276] Server  LOG     ✓ Compiled in 424ms

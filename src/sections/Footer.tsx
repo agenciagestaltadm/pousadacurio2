@@ -5,10 +5,10 @@ import { Phone, MapPin, Instagram, Facebook } from "lucide-react";
 
 // Apoiadores com logos - na ordem correta da imagem: Global Gateway, AL-INVEST, UE, SEBRAE
 const apoiadores = [
-  { nome: "Global Gateway", logo: "/images/gg-logo.png" },
-  { nome: "AL-INVEST Verde", logo: "/images/al-invest.png" },
-  { nome: "União Europeia", logo: "/images/ue-portuvertical.jpg" },
-  { nome: "SEBRAE", logo: "/images/sebrae.png" },
+  { nome: "Global Gateway", logo: "/images/gg-logo.png", width: 100, height: 50 },
+  { nome: "AL-INVEST Verde", logo: "/images/al-invest.png", width: 140, height: 70 },
+  { nome: "União Europeia", logo: "/images/ue-portuvertical.jpg", width: 100, height: 50 },
+  { nome: "SEBRAE", logo: "/images/sebrae.png", width: 100, height: 50 },
 ];
 
 // Duplicamos os apoiadores para criar o efeito de loop infinito no mobile
@@ -34,9 +34,9 @@ export function Footer() {
                     <Image
                       src={apoiador.logo}
                       alt={apoiador.nome}
-                      width={80}
-                      height={40}
-                      className="max-h-10 w-auto object-contain"
+                      width={apoiador.width || 80}
+                      height={apoiador.height || 40}
+                      className="max-h-12 w-auto object-contain"
                     />
                   ) : (
                     <span className="text-gray-600 text-sm font-medium text-center">
@@ -59,9 +59,9 @@ export function Footer() {
                   <Image
                     src={apoiador.logo}
                     alt={apoiador.nome}
-                    width={100}
-                    height={50}
-                    className="max-h-12 w-auto object-contain"
+                    width={apoiador.width || 100}
+                    height={apoiador.height || 50}
+                    className="max-h-16 w-auto object-contain"
                   />
                 ) : (
                   <span className="text-gray-600 text-sm font-medium text-center">
